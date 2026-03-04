@@ -1,5 +1,5 @@
 # Html & Css & web basics
-
+</br>
 ## Web 
 
 - **Internet** is bunch of connected computers.
@@ -16,6 +16,7 @@
 
 **Work flow:**
 My computer is a client and it sends a request to the web server and that server returns a response. Response contains html, css, javaScript. My browser takes those code and renders it.
+</br>
 ## Html
 
 Html is a mark up language. Html stands for **Hyper Text Mark Up Language**.
@@ -60,7 +61,7 @@ Hello World
 We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings to make text bigger.**
 
 ```html
-<h1><h1>
+<h1>Page title<h1>
     <h2>Something<h2>
         <h3>Sup-Something</h3>
         <h3>Sup-Something</h3>
