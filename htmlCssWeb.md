@@ -42,3 +42,34 @@ Hello World
 ```html
 </p>
 ```
+
+### Common tags:
+
+**1. Make text bold.**
+```html
+<b>This is bold...</b>
+```
+
+**2. Paragraph.**
+```html
+<p>This is a paragraph...<p>
+```
+
+**2. Headings.**
+</br>
+We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings to make text bigger.**
+
+```html
+<h1><h1>
+    <h2>Something<h2>
+        <h3>Sup-Something</h3>
+        <h3>Sup-Something</h3>
+            <h4>Sup-sup-something<h4>
+    <h2>Something2<h2>
+        <h3>Sup-Something2</h3>
+```
+
+
+# Resources:
+
+**1. MDN** - Docs for html, css, js
