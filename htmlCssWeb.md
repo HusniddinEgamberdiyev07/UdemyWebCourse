@@ -1,5 +1,5 @@
-# Html & Css & web basics
-</br>
+# Html & Css & web basics</br>
+
 ## Web 
 
 - **Internet** is bunch of connected computers.
@@ -15,8 +15,8 @@
 ---
 
 **Work flow:**
-My computer is a client and it sends a request to the web server and that server returns a response. Response contains html, css, javaScript. My browser takes those code and renders it.
-</br>
+My computer is a client and it sends a request to the web server and that server returns a response. Response contains html, css, javaScript. My browser takes those code and renders it.</br>
+
 ## Html
 
 Html is a mark up language. Html stands for **Hyper Text Mark Up Language**.
