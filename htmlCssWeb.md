@@ -56,7 +56,7 @@ Hello World
 <p>This is a paragraph...<p>
 ```
 
-**2. Headings.**
+**3. Headings.**
 </br>
 We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings to make text bigger.**
 
@@ -68,6 +68,23 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
             <h4>Sup-sup-something<h4>
     <h2>Something2<h2>
         <h3>Sup-Something2</h3>
+```
+
+**4. Links**
+
+**href** is an attribute which tells the destination. Attributes are information about html elements.We can put links or file locations inside href.
+
+```html
+<a href="place where we will go">Text which shows up<a>
+```
+
+**5. Images**
+
+**src** tells the img location it can be either link or file location.
+**alt** Message which shows up when src does not work
+
+```html
+<img src="location" alt="message">
 ```
 
 ### Html skeleton
