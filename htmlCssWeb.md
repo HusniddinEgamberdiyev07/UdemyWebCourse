@@ -70,6 +70,29 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
         <h3>Sup-Something2</h3>
 ```
 
+### Html skeleton
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My page</title>
+    </head>
+    <body>
+        <p>Something...</p>
+    </body>
+</html>
+```
+
+**1. Doctype** means that I am using html 5.
+
+**2. Html.** is a root element. It has one head and one body element.
+
+**3. Head** Contains metadata.
+
+**4. Body** Contains all content of the page.
+
+**4. Title** Changes pages title. It is inside head.
 
 # Resources:
 
