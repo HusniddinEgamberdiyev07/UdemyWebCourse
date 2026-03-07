@@ -135,6 +135,12 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
     </ol>
 ```
 
+### Html Comments
+
+```html 
+    <!-- This is a comment. Browser will not show it. -->
+```
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
