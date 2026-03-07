@@ -94,6 +94,30 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
 
 **4. Title** Changes pages title. It is inside head.
 
+### Html lists
+
+**1. ol** - Ordered list. Gives you numbers.
+
+**2. ul** - Unordered list. Gives you bullet points.
+
+**3. li** - List item
+
+```html 
+    <ul>
+        <li>Chaos</li>
+        <li>Imperium of man kind</li>
+        <li>Adeptus custodes</li>
+    </ul>
+```
+
+```html 
+    <ol>
+        <li>Chaos</li>
+        <li>Imperium of man kind</li>
+        <li>Adeptus custodes</li>
+    </ol>
+```
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
