@@ -215,7 +215,23 @@ It helps search engines and screen readers. It will make your code more easier t
 
 **9. details**
 
+### HTML emmet
 
+```html
+> child
++ sibling
+^ climb up
+* multiplication
+() group
+
+tag#id 
+
+tag.class
+
+tag[attribute=""]
+
+{} add text
+```
 
 # Resources:
 
