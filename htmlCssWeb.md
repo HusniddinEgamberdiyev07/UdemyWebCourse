@@ -103,6 +103,8 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
 
 **1. Doctype** means that I am using html 5.
 
+**What is html 5?** <br>It is new version of html and many new technologies like 3d, offline storage.
+
 **2. Html.** is a root element. It has one head and one body element.
 
 **3. Head** Contains metadata.
@@ -141,6 +143,17 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
     <!-- This is a comment. Browser will not show it. -->
 ```
 
+### Block and inline
+
+**block** - takes all the space. (p, h1-h6, div)
+**inline** - takes only its content size. (img, a, span)
+
+### Containers
+
+**div** - Content division element. It groups elements.
+**span** - It groups text elements. We can give them different style than other texts.
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
+**1. html.spec** - Explains how html works.
