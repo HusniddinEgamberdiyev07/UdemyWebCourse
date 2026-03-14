@@ -179,7 +179,20 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
     H<sub>2</sub>O
 ```
 
+### HTML entities
+
+Starts with **&** and ends with **;**. Used to display reserved characters. (arrows)
+
+Don't use < or > cause they are used to make tags and don't use &
+
+```html
+&lt; - <
+&gt; - >
+&amp; - &
+```
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
-**1. html.spec** - Explains how html works.
+**2. html.spec** - Explains how html works.
+**3. html entities list** - https://html.spec.whatwg.org/multipage/named-characters.html
