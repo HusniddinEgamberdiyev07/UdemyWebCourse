@@ -153,6 +153,32 @@ We have headings from h1 to h6. Use h1 only one in a page. **Do not use headings
 **div** - Content division element. It groups elements.
 **span** - It groups text elements. We can give them different style than other texts.
 
+### Other elements
+
+**hr** - horizontal line. 
+
+```html 
+    <hr>
+```
+
+**br** - line break. 
+
+```html 
+    <br>
+```
+
+**sup** - Supercript element. Up
+
+```html 
+    2<sup>2</sup>=4
+```
+
+**sub** - Subscript element. Down
+
+```html 
+    H<sub>2</sub>O
+```
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
