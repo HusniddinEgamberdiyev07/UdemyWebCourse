@@ -222,6 +222,7 @@ It helps search engines and screen readers. It will make your code more easier t
 + sibling
 ^ climb up
 * multiplication
+$ add numbers
 () group
 
 tag#id 
