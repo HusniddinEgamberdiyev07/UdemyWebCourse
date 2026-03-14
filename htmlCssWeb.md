@@ -191,8 +191,35 @@ Don't use < or > cause they are used to make tags and don't use &
 &amp; - &
 ```
 
+### HTML semantics
+
+**Semantic markup** - What purpose or role does the html element have?
+
+It helps search engines and screen readers. It will make your code more easier to read.
+
+**1. main** - main content. If something will be reapeted on other pages like navbar, footer, they will not be inside main.
+
+**2. header** - introductory content.
+
+**3. section** - a section of a page.
+
+**4. nav** - navigation links.
+
+**5. article** - self contained composition. Independently distributable or reusable.
+
+**6. footer**
+
+**7. aside** - indirectly related to the content.
+
+**8. summary**
+
+**9. details**
+
+
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
 **2. html.spec** - Explains how html works.
 **3. html entities list** - https://html.spec.whatwg.org/multipage/named-characters.html
+**4. HTML emmet** - https://docs.emmet.io/
