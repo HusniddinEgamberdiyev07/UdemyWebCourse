@@ -237,6 +237,9 @@ tag[attribute=""]
 # Resources:
 
 **1. MDN** - Docs for html, css, js
+
 **2. html.spec** - Explains how html works.
+
 **3. html entities list** - https://html.spec.whatwg.org/multipage/named-characters.html
+
 **4. HTML emmet** - https://docs.emmet.io/
