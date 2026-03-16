@@ -234,6 +234,26 @@ tag[attribute=""]
 {} add text
 ```
 
+### HTML tables
+
+**1. table** - tells it is table
+
+**2. td** - table data, single cell.
+
+**3. tr** - table row
+
+**4. th** - table header
+
+**5. thead** - tells this is a head part
+
+**6. tbody** - tells this is a body part
+
+**7. tfoot** - tells this is a footer part
+
+**8. colpsan** - eats columns
+
+**9. rowspan** - eats rows
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
