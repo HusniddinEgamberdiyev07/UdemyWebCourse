@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>forms</h1>
+
+    <form>
+        <div>
+            <label for="name">Enter your name</label>
+            <input type="text" placeholder="name" id="name" name="username">
+        </div>
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <div>
+            <label>
+                Enter a number<input type="number" placeholder="Enter a number" min="0" max="10">
+            </label>
+        </div>
+        <input type="color">
+        <button type="button">Press me</button>
+        <input type="submit" value="Press me">
+    </form>
+
+    <form action="https://www.reddit.com/search/">
+        <input type="text" placeholder="search" name="q">
+        <button>Submit to Reddit</button>
+    </form>
+
+    <form action="/restuarant">
+
+        <div>
+            <label for="cash">Cash</label>
+            <input type="radio" name="paymentMethod" id="cash" value="cash">
+            <br>
+            <label for="card">Card</label>
+            <input type="radio" name="paymentMethod" id="card" value="card">
+        </div>
+
+
+        <div>
+            <label for="food">Select a food</label>
+            <select name="food" id="food">
+                <option value="Burger">Burger</option>
+                <option value="Hotdog">Hotdog</option>
+                <option value="Sandwitch">Sandwitch</option>
+            </select>
+
+            <label for="amount">Amount</label>
+            <input type="range" id="amount" name="amount" min="1" max="5">
+        </div>
+
+        <div>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Terms</label>
+        </div>
+
+        <div>
+            <label for="msg">Leave a message</label>
+            <textarea name="msg" id="msg" placeholder="Leave a message" rows="20" cols="5"></textarea>
+        </div>
+
+        <button>Order</button>
+    </form>
+
+    <h2>Validation</h2>
+    <form action="/validate">
+        <label for="username">Enter username</label>
+        <input type="text" required minlength="5" maxlength="10" name="username">
+
+        <input type="email" name="email" id="email" placeholder="email">
+        <button>Register</button>
+    </form>
+</body>
+
+</html>

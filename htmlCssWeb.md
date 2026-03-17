@@ -254,6 +254,22 @@ tag[attribute=""]
 
 **9. rowspan** - eats rows
 
+### HTML forms
+
+**1. form** - tells it is a form. Action attribute tells where that should go. Method attribute tells http method type.
+
+**2. input** - to create form controls. type attribute changes input type. Placeholder writes something inside input box.
+
+**3. label** - Is conected text to the input. It has for attribute and it tells which input it is connected with. Id and for must be the same. Id is in input.
+
+**4. button** - Any button inside a form defaultly submits. Type button tells it is a button it won't submit. Type submit submits.
+
+**5. radio** - You select only one of them. You need to give them same name.
+
+**6. Checkbox** - You select many of them. To send value use value attribute.
+
+**7. select** - Groups options and give use drop down.
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
