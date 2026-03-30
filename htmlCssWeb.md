@@ -270,6 +270,50 @@ tag[attribute=""]
 
 **7. select** - Groups options and give use drop down.
 
+## CSS - cascading style sheets
+
+### Basic syntax
+
+```css
+selector{
+    property:value;
+}
+```
+
+### Connecting css to html
+
+1. Writing css inside style attribute.
+
+```html
+    <h1 style="color:red;">Hello World</h1>
+```
+
+2. Writing css inside style tag. Style tag is inside head.
+
+```html
+    <head>
+        <style>
+            h1{
+                color:red;
+            }
+        </style>
+    </head>
+```
+
+3. Write css on separate file and include it using link
+
+```html
+<link rel="stylesheet" href="./css/style.css">
+```
+
+
+### Common properties:
+
+1. color changes text color.
+
+2. background-color changes background
+
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
