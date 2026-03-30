@@ -307,11 +307,21 @@ selector{
 ```
 
 
-### Common properties:
+### Color properties:
 
 1. color changes text color.
 
 2. background-color changes background
+
+### CSS colors:
+
+1. Named colors (white, black).
+
+2. rgb colors - red, green, blue each one goes from 0 to 255. red 0 - no red, 255 red - max red. (255, 0, 0) - (red, green, blue)
+
+3. hexadecimal - Decimal(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). #ffff00 #ff(red)ff(green)00(blue). #ffffff #000000 #ff0000 #0000ff #00ff00 #ccffee #cfe #fff #000
+
+
 
 
 # Resources:
