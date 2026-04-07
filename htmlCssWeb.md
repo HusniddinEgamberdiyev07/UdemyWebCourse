@@ -346,16 +346,23 @@ selector{
     line position:
 
     3.1 underline
+
     3.2 line-through
+    
     3.3 overline
 
     line style:
 
     3.1 dashed
+    
     3.2 dotted
+    
     3.3 wavy
+    
     3.4 solid
+    
     3.5 double
+    
     3.6 none
 
 4. line-height -> position of a line
@@ -371,6 +378,14 @@ fontsize * value
     We can give more than one font after comma if our first one does not work it takes second one.
 
     Or we can tell font family group such as serif.
+
+9. text-transform
+
+    9.1 uppercase
+    
+    9.2 lowercase
+    
+    9.3 capitalize
 
 ### Units
 
