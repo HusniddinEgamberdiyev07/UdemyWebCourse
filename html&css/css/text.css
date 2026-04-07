@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-weight: 400;
+    /* font-family: Arial, sans-serif; */
+    font-family: NanumGothic;
+}
+
+h2{
+    text-align: right;
+    font-weight: 700;
+    text-decoration: underline overline line-through dashed red;
+
+}
+
+h3{
+    text-align: left;
+}
+
+p{
+    line-height: 0.5;
+    letter-spacing: 10px;
+    font-size: 5px;
+}

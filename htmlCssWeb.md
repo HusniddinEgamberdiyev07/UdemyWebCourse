@@ -321,7 +321,60 @@ selector{
 
 3. hexadecimal - Decimal(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). #ffff00 #ff(red)ff(green)00(blue). #ffffff #000000 #ff0000 #0000ff #00ff00 #ccffee #cfe #fff #000
 
+### Text properties:
 
+1. text-align - how text aligned withing an element.
+
+    1.1 left.
+
+    1.2 right.
+
+    1.3 center.
+
+    1.4 justify.
+
+2. font-weight
+    
+    2.1 normal-400
+    
+    2.2 lighter-100
+    
+    2.3 bold-700
+
+3. text-decoration -> line
+
+    line position:
+
+    3.1 underline
+    3.2 line-through
+    3.3 overline
+
+    line style:
+
+    3.1 dashed
+    3.2 dotted
+    3.3 wavy
+    3.4 solid
+    3.5 double
+    3.6 none
+
+4. line-height -> position of a line
+
+fontsize * value
+
+6. letter-spacing
+
+7. font-size
+
+8. font-family
+
+    We can give more than one font after comma if our first one does not work it takes second one.
+
+    Or we can tell font family group such as serif.
+
+### Units
+
+1. Pixels -> absolute unit. Not recommended for responsive.
 
 
 # Resources:
