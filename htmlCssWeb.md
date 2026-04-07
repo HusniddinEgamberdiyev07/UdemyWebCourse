@@ -392,6 +392,47 @@ fontsize * value
 1. Pixels -> absolute unit. Not recommended for responsive.
 
 
+### Selectors
+
+1. Universal selector * selects everything.
+
+2. Selecting by an element.
+
+3. Selecting by id. #name
+
+4. Selecting by a class. Class helps us to group elements.  .name
+
+5. Descendant. li a{}. Means all a inside li.
+
+6. Adjacent. Selects element which come after first element. input + button. Selects button which came after input.
+
+7. Direct child. div > li selects li that are direct children of div.
+
+8. Select by attribute. input[type="text"].
+
+### Pseudo Classes
+
+1. :active
+
+2. :checked
+
+5. :hover
+
+8. :nth-of-type()
+
+### Pseudo
+
+1. ::first-letter
+
+2. ::first-line
+
+3. ::selection
+
+### Specificity
+
+More specific selectors will win
+Id>Class, Pseudo Class, Attribute>Element
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js

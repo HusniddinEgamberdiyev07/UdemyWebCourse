@@ -1,0 +1,50 @@
+/* #search{
+    background-color: #e76f51;
+} */
+
+.post{
+    color: #9b2226;
+}
+.tag{
+    color: #669bbc;
+}
+
+span a{
+    color: #344e41;
+}
+
+#something + button{
+    background-color: #283618;
+}
+
+div > li{
+    color:red;
+}
+
+input[type="text"]{
+    background-color: #283618;
+}
+
+button:hover{
+    background-color: darkmagenta;
+    color: #fff;
+}
+
+button:active{
+    background-color: red;
+}
+
+.post:nth-of-type(2n){
+    background-color: #2a9d8f;
+}
+
+h1::first-letter{
+    background-color: #283618;
+}
+p::first-line{
+    background-color: #9b2226;
+}
+
+p::selection{
+    color: gold;
+}
