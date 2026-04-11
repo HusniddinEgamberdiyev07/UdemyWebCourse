@@ -391,6 +391,7 @@ fontsize * value
 
 1. Pixels -> absolute unit. Not recommended for responsive.
 
+2. Percentages -> Sometimes its value is from parent and sometimes from itself
 
 ### Selectors
 
@@ -420,7 +421,7 @@ fontsize * value
 
 8. :nth-of-type()
 
-### Pseudo
+### Pseudo elements
 
 1. ::first-letter
 
@@ -440,6 +441,36 @@ Don't use !important or inline styles
 Child elements will inherit styles from parent element.
 
 color:inherit;
+
+### Box model
+
+margin [ border [ padding [ width-height ] padding ] border ] margin
+
+1. width
+
+2. height
+
+3. border
+
+4. border-width - thickness
+
+5. border-color
+
+6. border-style - line style
+
+7. border-radius
+
+8. padding - vertical horizontal , top right bottom left, all
+
+9. margin - vertical horizontal , top right bottom left, all
+
+### Display
+
+1. inline - takes content space. It ignores width and height. Padding, margin works horizontal and not vertical
+
+2. block - takes all space. Width, height, padding, margin works on it.
+
+3. inline-block - behaves like a inline and respects width, height, margin, padding
 
 # Resources:
 
