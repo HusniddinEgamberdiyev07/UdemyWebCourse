@@ -393,6 +393,13 @@ fontsize * value
 
 2. Percentages -> Sometimes its value is from parent and sometimes from itself
 
+3. em - 1em == font size of parent element. 2em is twice of it. margin:1em; it takes from font-size on element itself not parent. They can stack.
+
+4. rem -> they take valu from root html element
+
+
+rem are good for font and em are good for margin, padding
+
 ### Selectors
 
 1. Universal selector * selects everything.
@@ -471,6 +478,14 @@ margin [ border [ padding [ width-height ] padding ] border ] margin
 2. block - takes all space. Width, height, padding, margin works on it.
 
 3. inline-block - behaves like a inline and respects width, height, margin, padding
+
+### Opacity
+
+1. rgba -> a can have value from 0 to 1. 0 - transparent and 1 - not
+
+2. opacity -> makes everything transparent.
+
+3. hexadecimal - after 6 we have 2 more digits.
 
 # Resources:
 
