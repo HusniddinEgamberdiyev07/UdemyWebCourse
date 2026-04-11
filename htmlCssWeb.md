@@ -431,7 +431,15 @@ fontsize * value
 ### Specificity
 
 More specific selectors will win
-Id>Class, Pseudo Class, Attribute>Element
+!important>Inline styles>Id>Class, Pseudo Class, Attribute>Element
+
+Don't use !important or inline styles
+
+### Inheritence
+
+Child elements will inherit styles from parent element.
+
+color:inherit;
 
 # Resources:
 
