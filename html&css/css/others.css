@@ -2,12 +2,73 @@ section{
     background-color: blueviolet;
     width: 400px;
     height: 400px;
+    margin: 100px;
+    position: relative;
 }
 
-div{
-    /* background-color: rgba(255, 255, 255, 0.4); */
+/* div{
+    background-color: rgba(255, 255, 255, 0.4);
     background-color: #fff;
     width: 40%;
     height: 40%;
     opacity: 0.2;
+} */
+
+.pos{
+    width: 100px;
+    height: 100px;
+    background-color: darkviolet;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.pos:nth-of-type(2){
+    background-color: darkblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    transition: all 1s 0.5s ease-in;
+    transition-timing-function: ease-out;
+}
+
+section:hover+ .circle{
+    background-color: aqua;
+    border-radius: 50%;
+    margin-left: 1000px;
+}
+
+.transform{
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: 3px solid black;
+    margin: 20px auto;
+}
+
+.transform:nth-child(3n+1){
+    background-color: #5390d9;
+}
+.transform:nth-child(3n+2){
+    background-color: #6930c3;
+}
+.transform:nth-child(3n){
+    background-color: #7400b8;
+}
+.transform:nth-child(1){
+    transform-origin: top left;
+    transform: rotate(100deg);
+}
+
+.transform:nth-child(2){
+    transform: scale(2,1);
+}
+
+.transform:nth-child(3){
+    transform: translateY(100px) skew(20deg, 10deg);
 }

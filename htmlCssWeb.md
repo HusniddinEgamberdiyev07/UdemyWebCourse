@@ -487,6 +487,44 @@ margin [ border [ padding [ width-height ] padding ] border ] margin
 
 3. hexadecimal - after 6 we have 2 more digits.
 
+### Position
+
+Position tell top, left, bottom, right how to work
+
+1. Static - default value
+
+2. Relative - moves them from original position
+
+3. Absolute - Element is removed from document and moves from other positioned parent element.
+
+4. fixed - stays on that position
+
+### Transitions
+
+1. transition -> propert name | duration | timing function | delay
+
+### Transform
+
+1. rotate -> deg
+
+2. scale
+
+3. translate -> moves
+
+4. skew -> deg x, deg y
+
+### background
+
+1. background-image -> url
+
+2. background-size -> cover, contain, auto
+
+3. background-repeat -> repeat, no-repeat
+
+4. background-position -> top, left, right, bottom
+
+5. background-color
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
@@ -496,3 +534,7 @@ margin [ border [ padding [ width-height ] padding ] border ] margin
 **3. html entities list** - https://html.spec.whatwg.org/multipage/named-characters.html
 
 **4. HTML emmet** - https://docs.emmet.io/
+
+**5. Timing Functions** - https://easings.net/
+
+**6. Fonts** - https://fonts.google.com/
