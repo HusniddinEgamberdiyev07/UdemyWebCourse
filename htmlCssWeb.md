@@ -551,6 +551,11 @@ flex has two axis main and cross.
 
 11 flex:grow|shrink|basis;
 
+### Responsive
+
+1. Media queries
+    1.1 @media (width: 360px){}
+
 
 # Resources:
 
