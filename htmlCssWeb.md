@@ -525,6 +525,33 @@ Position tell top, left, bottom, right how to work
 
 5. background-color
 
+### Flexbox
+
+flex has two axis main and cross.
+
+1. display:flex; -> turns flex on
+
+2. flex-direction:; -> changes main axis. row or column, row-reverse or column-reverse
+
+3. justify-content:; -> moves the content on main axis. flex-start, flex-end, center, space-between, space-around, space-evenly. 
+
+4. flex-wrap -> wrap, wrap-reverse. wrap-reverse changes cross axis
+
+5. align-items:; -> moves content on cross axis. flex-start, flex-end, center, baseline(looks for font-size)
+
+6. align-content:; -> center, space-between, space-around, space-evenly. Cross axis
+
+7. align-self:; -> child of display flex element. Moves itself on cross axis
+
+8. flex-basis:; -> initial size
+
+9. flex-grow:; -> tells to get more space if available
+
+10. flex-shrink:; -> if elements are larger than container it tells how much to shrink
+
+11 flex:grow|shrink|basis;
+
+
 # Resources:
 
 **1. MDN** - Docs for html, css, js
