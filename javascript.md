@@ -462,3 +462,41 @@ let arr = [
 ]
 arr[1][0]; // 3
 ```
+
+### Objects basics.
+
+Objects are data structure. Objects stores data in key and value pairs which is property. We access values using keys.
+
+**Creating object literals**
+
+```js
+{ key:"value", key2:"value2" }
+```
+
+**Accessing value**
+
+```js
+let key = "age"
+const person = {userName:"Husniddin", [key]:19};
+person["userName"]; // "Husniddin"
+person.userName; // "Husniddin"
+person[key];
+```
+
+**Adding new property**
+
+```js
+let person = {};
+person.name = "Husniddin"
+person["age"] = 19;
+```
+
+**Modifying property**
+
+```js 
+let person = {name:"Husniddin", age:19};
+person.name = "Someone"
+person["age"] = 20;
+```
+
+All keys are converted to strings.
