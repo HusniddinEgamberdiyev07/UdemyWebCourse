@@ -500,3 +500,110 @@ person["age"] = 20;
 ```
 
 All keys are converted to strings.
+
+### For loops
+
+**Syntax**
+
+for(    
+    [initialExpression];
+    [condition];
+    [incrementExpression]
+){
+    code which repeats
+}
+
+if condition is true loop will continue running. If your condition is always true it causes infinte loops.
+
+```js
+//  start at 1 | end at 10 | add 1 each time
+for(let i = 1; i<=10; i++){
+    console.log(i);
+}
+```
+
+### Nested loops
+
+```js
+for(let i=1; i<=3; i++){
+    console.log(`Outer ${i}`)
+    for(let j=1; j<=3; j++){
+        console.log(`   Inner ${j}`)
+    }
+}
+```
+
+### For of loop
+
+**Syntax**
+
+for(variable of iterable){
+    code
+}
+
+```js 
+let arr = [1,2,3,4];
+
+for(let i of arr){
+    console.log(i);
+}
+```
+
+### While loops
+
+**Syntax**
+
+while(condition){
+    code which repeats
+}
+
+```js
+let i = 1;
+while(i < 10){
+    i++
+    console.log(i);
+    if(i===5){
+        break;
+    }
+}
+```
+
+**break** stops the loop.
+
+
+### Iterating arrays
+
+1. Using for loops.
+
+```js
+let arr = [1,2,3,4];
+
+for(let i = 0; i<arr.length; i++){
+    console.log(i, arr[i]);
+}
+```
+
+### Iterating objects
+
+```js 
+let obj = {username:"Husniddin", age:19}
+
+for(let i in obj){
+    console.log("key " + i);
+    console.log("value " + obj[i]);
+}
+```
+
+Object.keys(obj) -> gives us all keys in an array
+
+Object.values(obj) -> gives us all values in an array
+
+Object.entries(obj) -> gives us nested array of all key & valu pairs
+
+```js 
+let obj = {username:"Husniddin", age:19};
+
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
+```

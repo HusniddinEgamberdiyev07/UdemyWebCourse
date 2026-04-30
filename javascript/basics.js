@@ -35,13 +35,16 @@ console.log("Hello World");
 // let arr = [1,2,3,4,5,6];
 // console.log(arr.slice(2)); // [3, 4, 5, 6]
 
-let arr = [1,2,5,6,7,8];
-arr.splice(2, 0, 3, 4);
-console.log(arr); // [1, 2, 3, 4, 5, 6, 7, 8]
-arr.splice(4, 4, 50,60,70,80);
-console.log(arr); // [1, 2, 3, 4, 50, 60, 70, 80]
-arr.splice(4,0,9, 10);
-console.log(arr);
-arr.splice(5, 2, 100, 500);
-console.log(arr);
+// let arr = [1,2,5,6,7,8];
+// arr.splice(2, 0, 3, 4);
+// console.log(arr); // [1, 2, 3, 4, 5, 6, 7, 8]
+// arr.splice(4, 4, 50,60,70,80);
+// console.log(arr); // [1, 2, 3, 4, 50, 60, 70, 80]
+// arr.splice(4,0,9, 10);
+// console.log(arr);
+// arr.splice(5, 2, 100, 500);
+// console.log(arr);
 
+for(let i = 1; i<=10; i++){
+    console.log(i);    
+}
