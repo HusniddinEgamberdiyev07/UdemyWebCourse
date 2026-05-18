@@ -607,3 +607,71 @@ console.log(Object.keys(obj));
 console.log(Object.values(obj));
 console.log(Object.entries(obj));
 ```
+
+## Functions
+
+### Function basics
+
+Functions are reusable chunk of code. Which helps us to not duplicate our code. It makes code easier to read. They can take a input and give an output.
+
+### Creating and using functions
+
+Defining function.
+
+```js
+    function name(){
+        // code
+    }
+```
+
+Using it.
+
+```js
+    name();
+```
+
+We can call the function before defining it.
+
+```js
+    name();
+    name();
+
+    function name(){
+        // code
+    }
+```
+
+### Arguments & Parameters
+
+Arguments === values
+Parameters === placeholder
+
+Arguments & Parameters === input
+
+```js
+function name(parameter1, parameter2, ...){
+    console.log(parameter1)
+}
+
+name(argument1, argument2);
+```
+
+If we do not give an argument to a parameter, it is value will be **undefined**.
+
+Order matters.
+Parameters takes values by order. First param takes first arg. Second param takes second second arg and so on.
+
+
+### Outputs / return
+
+**Returns** returns a value which we can store it somewhere else. Retrun **ends** function. Return can only return single value.
+
+```js
+function add(num1, num2){
+    return num1 + num2; // function ended. And it returned sum of num1 and num2
+    console.log(num1, num2); // does not work
+}
+
+let sum = add(1, 2);
+console.log(sum)
+```

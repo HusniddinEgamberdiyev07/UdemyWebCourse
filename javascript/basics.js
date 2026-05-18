@@ -1,4 +1,4 @@
-console.log("Hello World");
+// console.log("Hello World");
 // alert("hello World");
 // confirm("Are u gay")
 // prompt("Enter some shit");
@@ -45,6 +45,7 @@ console.log("Hello World");
 // arr.splice(5, 2, 100, 500);
 // console.log(arr);
 
-for(let i = 1; i<=10; i++){
-    console.log(i);    
-}
+// for(let i = 1; i<=10; i++){
+//     console.log(i);    
+// }
+
