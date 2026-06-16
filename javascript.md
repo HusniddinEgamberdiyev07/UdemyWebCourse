@@ -218,9 +218,9 @@ let rNum = Math.floor(Math.random()*5)+20;
 
 ### Undefined & null
 
-**Undefined** -> Variable that do not have an assigned value are undefined. Intentional lack of value which we assign.
+**Undefined** -> No value assigned yet (automatic).
 
-**Null** -> Must be assigned. Means nothing there.
+**Null** -> Intentionally empty value (manual assignment).
 
 ### Comparison operators
 
@@ -675,3 +675,185 @@ function add(num1, num2){
 let sum = add(1, 2);
 console.log(sum)
 ```
+
+## Advanced Functions
+
+### Scope - variable visibility
+
+- **Function Scope** - variables defined inside a function. We cannot access it outside of that function. Functions access variables from inside to outside. If I have a variable name both outside of function and inside it. My function will use inside one. If I have a variable name outside of function and nothing inside it will use outside one.
+
+```js
+let name = "husniddin";
+
+function sayName(){
+    console.log(name); // husniddin
+}
+```
+
+```js
+let name = "husniddin";
+
+function sayName(){
+    let name = "someone";
+    console.log(name); // someone
+}
+```
+
+- **Block Scope** - if, for, while. Variables defined inside {}.
+
+```js
+for(let i =0; i<10; i++>){
+    let msg = "something";
+    console.log(msg)
+}
+
+if(10<20){
+    let num = 0;
+}
+```
+
+- **var** - has no block scope. Only function scope.
+
+```js
+if(true){
+    var num = 0;
+}
+console.log(num) // 0
+```
+
+- **Lexical scope** - Inner function has access to parent function.
+
+```js
+function getNum(){
+    let num = 0;
+    function showNum(){
+        console.log(num);
+    }
+    showNum(); // 0
+}
+```
+
+### Function expression
+
+- **Function Declaration**
+
+```js
+function sayHi(){
+    consoloe.log("Hi");
+}
+```
+
+- **Function Expression**
+
+```js
+const sayHi = function(){
+    console.log("Hi");
+}
+```
+
+### Higher order functions
+
+Functions accept other functions as an argument or return a function.
+
+Functions can be a value and we can store it to a variable. We can send it as an argument too.
+
+```js
+function callTwice(func){
+    func();
+    func();
+}
+
+function sayHi(){
+    console.log("Hello There");
+}
+
+callTwice(sayHi)
+```
+
+### Returning functions
+
+```js
+function between(min, max){
+    return function(num){
+        return num >= min && num <= max;
+    }
+}
+
+const from100To200 = between(100, 200);
+
+console.log(from100To200(1));
+console.log(from100To200(101));
+```
+
+### Methods
+
+Methods is a function which is placed as a property on an object.
+
+```js
+let obj = {
+    method: function(param1, param2){
+        code
+        return value;
+    }
+}
+```
+
+Shorthand
+
+```js
+let obj={
+    method(param1, param2){
+        code
+        return value
+    }
+}
+```
+
+### Keyword this
+
+If I have an object **unit** and **this** inside it. That this will refer to unit object. We can access unit's properties with this.
+
+```js
+let unit = {
+    type:"footman",
+    weapon:"common sword",
+    move(){
+        console.log(`${this.type} is moving.`); // this.type = "footman"
+        console.log(this)
+    }
+}
+```
+
+This depends on how we call the function.
+this refers to an object which is left side of the dot.
+
+```js
+let moveFunc = unit.move;
+moveFunc(); // this refers to window. undefined is moving.
+// window.moveFunc();
+```
+
+When I can function it will be a property of the window object
+
+```js
+function sayHi(){
+    console.log("Hi");
+}
+window.sayHi();
+```
+
+### Try/catch statements.
+
+We wrap a block of code which might cause an error.
+Catch is a block of code which runs when error occurs.
+
+```js
+hello.toUpperCase(); // ReferenceError
+```
+
+```js
+try{
+    hello.toUpperCase(); 
+}catch{
+    console.log("Error")
+}
