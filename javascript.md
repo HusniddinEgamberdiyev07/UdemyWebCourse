@@ -854,6 +854,148 @@ hello.toUpperCase(); // ReferenceError
 ```js
 try{
     hello.toUpperCase(); 
-}catch{
-    console.log("Error")
+}catch(e){
+    console.log(`Error: ${e}`)
 }
+```
+
+### For each
+
+Accepts a callback function.
+Calls the function once per element in the array.
+
+```js
+const nums = [1,2,3];
+nums.forEach(function(num){
+    console.log(num+1);
+})
+```
+
+### Map
+
+Map is the same as for each but it creates a new array using a return value.
+
+```js
+const words = ["apple", "orange", "something"];
+const upperWords = words.map(function(word){
+    return word.toUpperCase();
+})
+```
+
+### Arrow functions
+
+It is alternative for function expression.
+
+Syntax:
+
+```js
+const sayMsg = () => {
+    console.log("Hi");
+}
+
+const add = (a,b) => {
+    retrun a+b;
+}
+
+const square = a =>{
+    return a**2;
+}
+```
+
+Implicit return. Remove return keyword. Only one statement.
+
+```js
+const add = (a,b) => (
+    a+b;
+)
+
+const add = (a,b) => a+b;
+```
+
+**this** - Arrow functions do not define their own this context. Instead, they inherit this from the surrounding lexical scope at the time of their creation.
+
+```js
+let user = {
+    name:"Husniddin",
+    hi:()=>{
+        console.log(this) // window
+    },
+    bye:function(){
+        console.log(this) // user
+        let func = ()=>{
+            console.log(this) // user
+        }
+        func()
+    }
+}
+```
+
+### Filter
+
+Creates an array with all elements that the test which was implemented by callback function. Callback has to retunr true or false.
+
+```js
+// even num filter
+const nums = [1,2,3,4,5,6,7, 8, 9, 10, 11];
+const evens = nums.filter((num)=>num%2===0);
+```
+
+### Some & every
+
+Every checks all elements passes the test. It returns true if all passes otherwise false.
+Some checks all elements passes the test. It returns if any of them passes true otherwise false.
+
+### Reduce
+
+Reduce takes a reducer function and reduces to a single value. That functions takes two parameters.
+
+```js
+// sum all values from an array
+// accumulator is final result
+
+const nums = [1,2,3, 4];
+let sum = nums.reduce((accumulator, currentValue)=>accumulator+currentValue)
+console.log(sum);
+
+// call, accumulator, currentValue, retrun value
+//  1       4              10           14
+//  2       14             13           27
+//  3       27             20           27
+```
+
+Adding starting point.
+
+```js
+let sum = nums.reduce((accumulator, currentValue)=>accumulator+currentValue, 100)
+```
+
+### SetTimeout & SetInterval
+
+```js
+console.log("Start") // this runs 1st
+setTimeout(()=>{
+    console.log("Hi") // this runs 3rd
+}, 3000) // 3000 miliseconds = 3seconds
+console.log("GoodBye") // this runs 2nd
+```
+
+SetInterval call a function every x miliseconds.
+
+```js
+setInterval(()=>{
+    console.log("Hi");
+}, 3000) // every 3s function will be executed.
+```
+
+Removing setInterval.
+
+```js
+// set Interval returns id and we can store it on a variable.
+const s1Id = setInterval(()=>{
+    console.log("Hi");
+}, 3000) // every 3s function will be executed.
+
+setTimeout(()=>{
+    clearInterval(s1Id)
+}, 9000)
+```
