@@ -97,3 +97,15 @@ style object shows only inline styles. **window.getComputedStyle(element)** show
 const h1 = document.querySelector("h1");
 h1.style.color = "red"
 ```
+
+### Classes
+
+**tag.classList** - Is an object which gives you all classes of the tag.
+
+**tag.classList.add()** - Adds new class.
+
+**tag.classList.remove()** - Removes the class.
+
+**tag.classList.contains** - Checks tag has this class.
+
+**tag.classList.toggle()** - If it has it it removes if it does not have it it adds.
