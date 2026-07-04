@@ -109,3 +109,16 @@ h1.style.color = "red"
 **tag.classList.contains** - Checks tag has this class.
 
 **tag.classList.toggle()** - If it has it it removes if it does not have it it adds.
+
+### Parent, children, sibling
+
+**tag.parentElement** - access parent.
+
+**tag.childElementCount** - counts child tags.
+
+**tag.children** - returns html collection of all child tags of this tag.
+
+**tag.nextSibling** and **tag.previousSibling** might return text node
+
+**tag.nextElementSibling** and **tag.previousElementSibling** better
+
