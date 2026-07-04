@@ -69,6 +69,8 @@ document.querySelector("h1:nth-of-type(2)")
 
 ## Manipulate
 
+### Text and child tags
+
 **innerText** - Text between opening and closing tags
 
 **innerHTML** - Shows texts and tags.
@@ -77,3 +79,10 @@ document.querySelector("h1:nth-of-type(2)")
 
 ![Local Image](./images/examples/TextContentInnerTextInnerHtml.png)
 
+### Attributes
+
+Directly access: id, src, href, title
+
+We can access any attribute using a method **getAttribute("attributeName")**.
+
+We can change an attribute or add new attribute using a method **setAttribute("attributeName", value)**.
