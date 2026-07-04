@@ -86,3 +86,14 @@ Directly access: id, src, href, title
 We can access any attribute using a method **getAttribute("attributeName")**.
 
 We can change an attribute or add new attribute using a method **setAttribute("attributeName", value)**.
+
+### Styles
+
+We can use **style** object to change styles.
+Everything is string.
+style object shows only inline styles. **window.getComputedStyle(element)** shows all.
+
+```js
+const h1 = document.querySelector("h1");
+h1.style.color = "red"
+```
