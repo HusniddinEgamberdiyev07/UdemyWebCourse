@@ -27,7 +27,15 @@ window.addEventListener("keydown", (e)=>{
 })
 
 const form = document.querySelector("#form");
+const tasks = document.querySelector("#tasks")
+const task = document.querySelector("#task")
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
+
+    const li = document.createElement("li");
+    li.innerText = task.value;
+    tasks.append(li)
+
+    task.value = "";
 })
