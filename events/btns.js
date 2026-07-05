@@ -42,6 +42,7 @@ const task = document.querySelector("#task")
 //     task.value = "";
 // })
 
+// second version
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -51,4 +52,12 @@ form.addEventListener("submit", function(e){
     tasks.append(li)
 
     task.value = "";
+})
+
+// when u type something this event will be triggered
+
+const inputChange = document.querySelector("#change");
+
+inputChange.addEventListener("input", function(){
+    console.log("Input value changed")
 })
