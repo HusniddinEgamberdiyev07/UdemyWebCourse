@@ -20,3 +20,14 @@ function changeColor(){
     this.style.backgroundColor = color;
     this.innerText = color
 }
+
+window.addEventListener("keydown", (e)=>{
+    console.log(e.code);
+    console.log(e.key);
+})
+
+const form = document.querySelector("#form");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+})
