@@ -69,3 +69,12 @@ bubble.addEventListener("click", function(e){
     e.stopPropagation();
     alert("btn clicked")
 })
+
+// event delegation
+
+tasks.addEventListener("click", function(e){
+    console.log(e.target);
+    console.log(e.target.innerText);
+
+    e.target.remove();
+})
