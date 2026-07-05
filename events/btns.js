@@ -61,3 +61,11 @@ const inputChange = document.querySelector("#change");
 inputChange.addEventListener("input", function(){
     console.log("Input value changed")
 })
+
+// event bubbling
+
+const bubble = document.querySelector("#bubble");
+bubble.addEventListener("click", function(e){
+    e.stopPropagation();
+    alert("btn clicked")
+})
