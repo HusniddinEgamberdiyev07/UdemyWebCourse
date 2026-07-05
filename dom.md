@@ -122,3 +122,24 @@ h1.style.color = "red"
 
 **tag.nextElementSibling** and **tag.previousElementSibling** better
 
+### Adding & removing elements.
+
+**document.createElement()** - creates new element.
+
+**tag.appendChild()** - adds an element at the end. Only accepts nodes. Can add only one node.
+
+**tag.append()** - Adds an element or text at the end. Can accept multiple nodes or strings.
+
+**tag.prepend()** - Adds an element before the first element. At the beginning. Can add multiple nodes or strings.
+
+**tag.after()** - adds new nodes or strings to its parent after itself.
+
+**tag.insertAdjacentElement(position, element)**
+    - 'beforebegin': Before the targetElement itself.
+    - 'afterbegin': Just inside the targetElement, before its first child.
+    - 'beforeend': Just inside the targetElement, after its last child.
+    - 'afterend': After the targetElement itself.
+
+**tag.removeChild()** - removes an element inside parent element.
+
+**tag.remove()** - removes itself.
