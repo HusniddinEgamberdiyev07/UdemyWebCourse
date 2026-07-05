@@ -30,11 +30,24 @@ const form = document.querySelector("#form");
 const tasks = document.querySelector("#tasks")
 const task = document.querySelector("#task")
 
+// first version
+
+// form.addEventListener("submit", function(e){
+//     e.preventDefault();
+
+//     const li = document.createElement("li");
+//     li.innerText = task.value;
+//     tasks.append(li)
+
+//     task.value = "";
+// })
+
+
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
     const li = document.createElement("li");
-    li.innerText = task.value;
+    li.innerText = form.elements.task.value;
     tasks.append(li)
 
     task.value = "";
