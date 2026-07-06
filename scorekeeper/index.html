@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <main>
+        <div class="scoreKeeper">
+            <div class="scoreContainer">
+                <h1 id="scoreLabel">
+                    <span id="playerOne">0</span> to <span id="playerTwo">0</span>
+                </h1>
+                <form>
+                    <label for="limit">Playing to</label>
+                    <select name="limit" id="limit">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </form>
+            </div>
+            <div class="btns">
+                <button id="playerOneBtn">+1 Player One</button>
+                <button id="playerTwoBtn">+1 Player Two</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+
+.scoreKeeper{
+    width: 400px;
+}
+
+.scoreContainer, .btns, .winnerDiv{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.btns{
+    margin-top: 5px;
+}
+
+.btns button{
+    padding: 10px;
+}
+
+.winner{
+    color: green;
+}
+
+.loser{
+    color: red;
+}
+
+.winnerDiv{
+    margin-top: 10px;
+}
+
+.winnerDiv h2{
+    color: green;
+}
