@@ -70,14 +70,8 @@ reset.addEventListener("click", ()=>{
     playerTwoBtn.disabled = false;
     changeLabel();
 
-    if(playerOneLabel.classList.contains("winner")) {
-        playerOneLabel.classList.remove("winner")
-        playerTwoLabel.classList.remove("loser")
-    }
-    else {
-        playerOneLabel.classList.remove("loser")
-        playerTwoLabel.classList.remove("winner")
-    }
+    playerOneLabel.classList.remove("winner", "loser")
+    playerTwoLabel.classList.remove("loser", "winner")
     
     scoreKeeper.removeChild(winnerDiv);
 })
