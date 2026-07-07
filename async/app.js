@@ -37,3 +37,29 @@ console.log("Bye");
 
 // Nesting setTimeouts
 
+// setTimeout(()=>{
+//     document.body.style.backgroundColor = "red"
+
+//     setTimeout(()=>{
+//         document.body.style.backgroundColor = "blue"
+
+//         setTimeout(()=>{
+//             document.body.style.backgroundColor = "green"
+//         }, 1500)
+
+//     }, 1500)
+
+// }, 1500)
+
+function delayChangeColor(color, delay, next){
+    setTimeout(()=>{
+        document.body.style.backgroundColor = color;
+        next && next();
+    }, delay)
+}
+
+delayChangeColor("red", 1500, ()=>{
+    delayChangeColor("blue", 1500, ()=>{
+        delayChangeColor("green", 1500);
+    })
+});
