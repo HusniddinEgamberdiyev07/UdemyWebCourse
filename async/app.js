@@ -58,11 +58,11 @@ function delayChangeColor(color, delay, next){
     }, delay)
 }
 
-delayChangeColor("red", 1500, ()=>{
-    delayChangeColor("blue", 1500, ()=>{
-        delayChangeColor("green", 1500);
-    })
-});
+// delayChangeColor("red", 1500, ()=>{
+//     delayChangeColor("blue", 1500, ()=>{
+//         delayChangeColor("green", 1500);
+//     })
+// });
 
 
 // Promises
@@ -117,3 +117,37 @@ fakeRequestPromise("somehwere.com")
     .catch(()=>{
         console.log("Rejected");
     })
+
+
+// Creating promise
+// promise takes a callback func which has has two parameters.
+
+const promise = new Promise((resolve, reject)=>{
+    const ranNum = Math.floor(Math.random()*10);
+
+    setTimeout(()=>{
+        if(ranNum < 7) resolve("Your data");
+        else reject("Error")
+    }, 1000)
+})
+promise
+    .then((data)=> console.log(data))
+    .catch((err)=> console.log(err))
+
+
+// better color changer
+
+function delayChangeColorPromise(color, delay){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay);
+    })
+}
+
+delayChangeColorPromise("red", 1000)
+    .then(()=> delayChangeColorPromise("blue", 1000))
+    .then(()=> delayChangeColorPromise("red", 1000))
+    .then(()=> delayChangeColorPromise("green", 1000))
+    .then(()=> delayChangeColorPromise("white", 1000))
