@@ -1,0 +1,19 @@
+#shows{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.show{
+    width: 340px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.show img{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
