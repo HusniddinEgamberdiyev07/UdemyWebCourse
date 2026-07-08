@@ -146,8 +146,38 @@ function delayChangeColorPromise(color, delay){
     })
 }
 
-delayChangeColorPromise("red", 1000)
-    .then(()=> delayChangeColorPromise("blue", 1000))
-    .then(()=> delayChangeColorPromise("red", 1000))
-    .then(()=> delayChangeColorPromise("green", 1000))
-    .then(()=> delayChangeColorPromise("white", 1000))
+// delayChangeColorPromise("red", 1000)
+//     .then(()=> delayChangeColorPromise("blue", 1000))
+//     .then(()=> delayChangeColorPromise("red", 1000))
+//     .then(()=> delayChangeColorPromise("green", 1000))
+//     .then(()=> delayChangeColorPromise("white", 1000))
+
+// async resolved
+
+async function resolvedAsync(){
+    return "Hello World"
+}
+
+resolvedAsync()
+    .then(data=>console.log(data))
+
+// async rejected
+
+async function asyncRejected() {
+    throw "This is an Error"
+    return "Hello World"
+}
+
+asyncRejected()
+    .then(data=>console.log(data))
+    .catch(err=>console.log(err))
+
+async function asyncChangeColor(){
+    await delayChangeColorPromise("red", 1000)
+    await delayChangeColorPromise("blue", 1000)
+    await delayChangeColorPromise("red", 1000)
+    await delayChangeColorPromise("green", 1000)
+    delayChangeColorPromise("white", 1000)
+}
+
+asyncChangeColor();

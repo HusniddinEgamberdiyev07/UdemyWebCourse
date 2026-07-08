@@ -11,3 +11,12 @@ It can be pending, resolved and rejected.
 
 .then(callback) -> resolved
 .catch(callback) -> rejected
+
+**async**
+
+Returns a promise automatically. When we return something promise will be resolved.
+When we get an error or throw an error promise will be rejected.
+
+**await**
+
+Waits till promise resolved
