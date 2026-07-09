@@ -41,3 +41,19 @@ CreateRobo.prototype.talk = function(){
 
 const robo2 = new CreateRobo("W");
 robo2.talk();
+
+// Classes
+
+class Robo{
+    constructor(name){
+        this.name = name;
+    }
+
+    talk(){
+        const {name} = this
+        console.log(name, " Hi");
+    }
+}
+
+const robo3 = new Robo("K");
+robo3.talk()
