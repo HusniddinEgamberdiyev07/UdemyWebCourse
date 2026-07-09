@@ -51,9 +51,25 @@ class Robo{
 
     talk(){
         const {name} = this
-        console.log(name, " Hi");
+        console.log(name, "Hi");
     }
 }
 
 const robo3 = new Robo("K");
 robo3.talk()
+
+// Extends & Super
+
+class SoldierRobo extends Robo{
+    constructor(name, weapon){
+        super(name)
+        this.weapon = weapon;
+    }
+    attack(){
+        console.log(this.name, "is attacking with", this.weapon);
+    }
+}
+
+const soldier = new SoldierRobo("J", "PLasma Gun");
+soldier.talk();
+soldier.attack();
