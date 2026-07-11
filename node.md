@@ -47,3 +47,5 @@ Works only where you are
 When we require js file content of that file is not aviable automatically.
 
 **module.exports** is empty object and what we put inside it what we can access in other files.
+
+We can export directory. index.js is main file whatever it exports directory will export that.
