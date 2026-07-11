@@ -41,3 +41,9 @@ Works anywhere
 Works only where you are
 
 **flags** - starts with -. ls -l
+
+### module
+
+When we require js file content of that file is not aviable automatically.
+
+**module.exports** is empty object and what we put inside it what we can access in other files.
