@@ -57,3 +57,4 @@ node package manager
 npm is thousand of packages and comman line tool.
 
 **npm install [package]** -> installing package
+**npm install -g [package]** -> installs globally
