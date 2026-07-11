@@ -49,3 +49,11 @@ When we require js file content of that file is not aviable automatically.
 **module.exports** is empty object and what we put inside it what we can access in other files.
 
 We can export directory. index.js is main file whatever it exports directory will export that.
+
+### npm
+
+node package manager
+
+npm is thousand of packages and comman line tool.
+
+**npm install [package]** -> installing package
