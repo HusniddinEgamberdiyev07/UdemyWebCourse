@@ -58,3 +58,8 @@ npm is thousand of packages and comman line tool.
 
 **npm install [package]** -> installing package
 **npm install -g [package]** -> installs globally
+
+### package.json
+
+**npm init** - command to create package.json easly
+**npm install** - install dependencies.
