@@ -36,3 +36,39 @@ $nin - not in
 
 $or
 $and
+
+**ODM** - Object Data Mapper
+**ORM** - Object Relation Mapper
+
+node -i -e "$(< index.js)"
+
+**schema** - tells types
+
+```js
+const animeSchema = new mongoose.Schema({
+    title:String,
+    plot:String,
+    year:Number,
+    score:Number
+});
+
+const Anime = mongoose.model("Anime", animeSchema);
+
+const blackClover = new Anime({
+    title:"Black clover",
+    plot:"The series focuses on Asta...",
+    year:2017,
+    score:9.5,
+});
+
+blackClover.save();
+
+Anime.find({}).then(data=>console.log(data));
+Anime.insertMany([{},{}]);
+
+Anime.findByIdAndUpdate('6a59ddd7b24631882c207183', {title:"Fire force"}, {returnDocument:"after"}).then(m=>console.log(m));
+Anime.updateMany({title:{$in : ["Black clover", "Fire force"]}}, {score:10.00}).then(data=>console.log(data))
+
+Anime.deleteOne({title:"Black clover"}).then(msg=>console.log(msg));
+Anime.findOneAndDelete({title:"Fire force"}).then(msg=>console.log(msg))
+```
