@@ -38,7 +38,7 @@ app.get("/tasks/new", (req, res)=>{
 app.get("/tasks/:id", wrapAsync(
     async (req, res, next)=>{
         const task = await TaskModel.findById(req.params.id);
-        if(task) return next(new AppError("Task not found", 404));
+        if(!task) return next(new AppError("Task not found", 404));
         res.render("./tasks/show", {task})
     }
 ))
@@ -67,6 +67,10 @@ app.delete("/tasks/:id", async (req, res)=>{
     await TaskModel.findByIdAndDelete(req.params.id);
 
     res.redirect(`/tasks`)
+})
+
+app.use((req, res, next)=>{
+    next(new AppError("Page is not found", 404))
 })
 
 app.use((err, req, res, next)=>{
