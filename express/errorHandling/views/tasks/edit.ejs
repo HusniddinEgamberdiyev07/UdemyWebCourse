@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit a Task</h1>
+    <form action="/tasks/<%= task._id %>/?_method=PUT" method="post">
+        <label for="task">Task</label>
+        <input type="text" name="task" placeholder="Do some shit" id="task" value="<%= task.task %>">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
